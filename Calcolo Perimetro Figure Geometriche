@@ -1,0 +1,24 @@
+scelta = -1
+while (scelta != 0):
+        print ("0. Esci")
+        print ("1. Perimetro Quadrato")
+        print ("2. Perimetro Rettangolo")
+        print ("3. Circonferenza Cerchio")
+        scelta = int (input ("Quale operazione vorresti eseguire? ") )
+
+        if (scelta == 0):
+                pass
+        elif (scelta == 1):
+                x = int (input ("Inserisci un lato del quadrato per calcolare il perimetro: ") )
+                print ("Il perimetro del quadrato è: ", x * 4)
+        elif (scelta == 2):
+                x = int (input ("Inserisci l'altezza del rettangolo: ") )
+                y = int (input ("Inserisci la base del rettangolo: ") )
+                print ("Il perimetro del rettangolo è: ", (x * 2) + (y * 2) ) 
+        elif (scelta == 3):
+                x = int (input ("Inserisci il raggio del cerchio: ") )
+                print ("La circonferenza del cerchio è: ", 2 * 3.14 * x)
+        else:
+                print ("Operazione non riconosciuta")
+        
+        print ("Arrivederci")
